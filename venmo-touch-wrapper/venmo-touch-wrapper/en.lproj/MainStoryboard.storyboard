@@ -1,71 +1,130 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2524" systemVersion="12A217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="12">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1863"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier Data View Controller-->
-        <scene sceneID="8">
+        <!--Touch Wrapper View Controller-->
+        <scene sceneID="5">
             <objects>
-                <viewController storyboardIdentifier="TouchWrapperDataViewController" id="5" customClass="TouchWrapperDataViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="6">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                <viewController id="2" customClass="TouchWrapperViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view translatesAutoresizingMaskIntoConstraints="NO" contentMode="scaleToFill" id="9">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </view>
-                            <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" autoshrinkMode="none" minimumFontSize="10" text="Label" textAlignment="center" id="10">
-                                <nil key="highlightedColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3q-8m-KNh">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button 2">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lol-gP-zke">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button 1">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button1Touch:" destination="2" eventType="touchUpInside" id="dAG-8V-pyE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yR-gY-Nxx">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button 3">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button3Touch:" destination="2" eventType="touchUpInside" id="zOS-Jx-A6z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhD-Ur-Z8s">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button 4">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button4Touch:" destination="2" eventType="touchUpInside" id="ceF-7d-cVG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CjD-HU-DUb">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
+                                <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sc0-EU-60k">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button 2">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button2Touch:" destination="2" eventType="touchUpInside" id="9Nn-K2-PhI"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.97826086960000003" green="0.91848131079999995" blue="0.73914263440000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="10" firstAttribute="top" secondItem="6" secondAttribute="top" constant="8" id="I07-rm-VFW"/>
-                            <constraint firstItem="10" firstAttribute="leading" secondItem="9" secondAttribute="leading" type="default" id="aK4-XX-w0a"/>
-                            <constraint firstAttribute="trailing" secondItem="10" secondAttribute="trailing" constant="8" type="user" id="e6E-Yf-T9W"/>
-                            <constraint firstAttribute="bottom" secondItem="9" secondAttribute="bottom" constant="8" id="gMY-L7-vVs"/>
-                            <constraint firstItem="10" firstAttribute="leading" secondItem="6" secondAttribute="leading" constant="8" type="user" id="l5K-zv-Glu"/>
-                            <constraint firstItem="9" firstAttribute="top" secondItem="10" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="y0d-Yn-SIr"/>
-                            <constraint firstItem="10" firstAttribute="trailing" secondItem="9" secondAttribute="trailing" type="default" id="zt2-xa-dOc"/>
+                            <constraint firstItem="jhD-Ur-Z8s" firstAttribute="baseline" secondItem="6yR-gY-Nxx" secondAttribute="baseline" type="default" id="0F6-0H-z8t"/>
+                            <constraint firstItem="CjD-HU-DUb" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="133" id="6yA-gf-rD0"/>
+                            <constraint firstItem="Sc0-EU-60k" firstAttribute="baseline" secondItem="Lol-gP-zke" secondAttribute="baseline" type="default" id="7nm-fB-LlB"/>
+                            <constraint firstItem="jhD-Ur-Z8s" firstAttribute="leading" secondItem="Lol-gP-zke" secondAttribute="leading" type="default" id="JlS-3Q-mZs"/>
+                            <constraint firstItem="CjD-HU-DUb" firstAttribute="top" secondItem="3" secondAttribute="top" constant="76" id="SIc-1r-3zE"/>
+                            <constraint firstItem="Z3q-8m-KNh" firstAttribute="top" secondItem="3" secondAttribute="top" constant="133" id="W6X-cz-Ywk"/>
+                            <constraint firstItem="Sc0-EU-60k" firstAttribute="leading" secondItem="Z3q-8m-KNh" secondAttribute="leading" type="default" id="Wef-It-Yr9"/>
+                            <constraint firstItem="Sc0-EU-60k" firstAttribute="leading" secondItem="6yR-gY-Nxx" secondAttribute="leading" type="default" id="XHy-I6-QW3"/>
+                            <constraint firstItem="6yR-gY-Nxx" firstAttribute="top" secondItem="3" secondAttribute="top" constant="246" id="ZCo-Qj-KHI"/>
+                            <constraint firstAttribute="trailing" secondItem="Lol-gP-zke" secondAttribute="trailing" constant="67" id="hXI-Tb-2T0"/>
+                            <constraint firstItem="Z3q-8m-KNh" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="57" id="kQc-EA-yUQ"/>
+                            <constraint firstItem="Sc0-EU-60k" firstAttribute="baseline" secondItem="Z3q-8m-KNh" secondAttribute="baseline" type="default" id="yAX-gc-u5X"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="dataLabel" destination="10" id="11"/>
+                        <outlet property="button1" destination="Lol-gP-zke" id="i6l-WA-plW"/>
+                        <outlet property="button2" destination="Sc0-EU-60k" id="mye-oc-cjp"/>
+                        <outlet property="button3" destination="6yR-gY-Nxx" id="n2A-Y9-WcL"/>
+                        <outlet property="button4" destination="jhD-Ur-Z8s" id="8LR-yg-X08"/>
+                        <outlet property="textLabel" destination="CjD-HU-DUb" id="gPs-oF-jRb"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="772" y="476"/>
-        </scene>
-        <!--class Prefix:identifier Root View Controller-->
-        <scene sceneID="15">
-            <objects>
-                <viewController id="12" customClass="TouchWrapperRootViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="13">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="360" y="476"/>
         </scene>
     </scenes>
     <classes>
-        <class className="TouchWrapperDataViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TouchWrapperDataViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="dataLabel" candidateClass="UILabel"/>
-            </relationships>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
-        <class className="TouchWrapperRootViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TouchWrapperRootViewController.h"/>
+        <class className="TouchWrapperViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TouchWrapperViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="pageViewController" candidateClass="UIPageViewController"/>
+                <relationship kind="action" name="button1:" candidateClass="UIButton"/>
+                <relationship kind="action" name="button1Touch:"/>
+                <relationship kind="action" name="button2Touch:"/>
+                <relationship kind="action" name="button3Touch:"/>
+                <relationship kind="action" name="button4Touch:"/>
+                <relationship kind="outlet" name="button1" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="button2" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="button3" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="button4" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="textLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
     </classes>

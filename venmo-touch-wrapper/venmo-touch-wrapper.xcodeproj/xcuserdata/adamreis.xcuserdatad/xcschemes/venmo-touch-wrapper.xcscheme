@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ED6448F317B03A0800DAC1C9"
+               BlueprintIdentifier = "ED64494517B040D600DAC1C9"
                BuildableName = "venmo-touch-wrapper.app"
                BlueprintName = "venmo-touch-wrapper"
                ReferencedContainer = "container:venmo-touch-wrapper.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ED64491F17B03A0900DAC1C9"
+               BlueprintIdentifier = "ED64496B17B040D600DAC1C9"
                BuildableName = "venmo-touch-wrapperTests.octest"
                BlueprintName = "venmo-touch-wrapperTests"
                ReferencedContainer = "container:venmo-touch-wrapper.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "ED6448F317B03A0800DAC1C9"
+            BlueprintIdentifier = "ED64494517B040D600DAC1C9"
             BuildableName = "venmo-touch-wrapper.app"
             BlueprintName = "venmo-touch-wrapper"
             ReferencedContainer = "container:venmo-touch-wrapper.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "ED6448F317B03A0800DAC1C9"
+            BlueprintIdentifier = "ED64494517B040D600DAC1C9"
             BuildableName = "venmo-touch-wrapper.app"
             BlueprintName = "venmo-touch-wrapper"
             ReferencedContainer = "container:venmo-touch-wrapper.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "ED6448F317B03A0800DAC1C9"
+            BlueprintIdentifier = "ED64494517B040D600DAC1C9"
             BuildableName = "venmo-touch-wrapper.app"
             BlueprintName = "venmo-touch-wrapper"
             ReferencedContainer = "container:venmo-touch-wrapper.xcodeproj">
