@@ -81,13 +81,15 @@
 didAuthorizeCardWithPaymentMethodCode:(NSString *)paymentMethodCode {
     NSLog(@"didAuthorizeCardWithPaymentMethodCode %@", paymentMethodCode);
     
+//    [self performSegueWithIdentifier:checkoutpage sender:nil];
     
+    ///THIS FUNCTION WILL BE CALLED. 
 //    [self performSegueWithIdentifier:@"checkoutpage" sender:self];
-    TouchWrapperFinalViewController *finalView = [[TouchWrapperFinalViewController alloc] init];
-
-    UINavigationController *navController =
-    [[UINavigationController alloc] initWithRootViewController:finalView];
-    [self presentViewController:navController animated:YES completion:nil];
+//    TouchWrapperFinalViewController *finalView = [[TouchWrapperFinalViewController alloc] init];
+//
+//    UINavigationController *navController =
+//    [[UINavigationController alloc] initWithRootViewController:finalView];
+//    [self presentViewController:navController animated:YES completion:nil];
 
     //Send payment info to server. Not needed at this point.
     // Create a dictionary of POST data of the format
