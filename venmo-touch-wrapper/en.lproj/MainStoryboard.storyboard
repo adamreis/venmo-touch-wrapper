@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Touch Wrapper View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="TouchWrapperViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lol-gP-zke">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="Burrito.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="performSegue:" destination="2" eventType="touchUpInside" id="BaD-7s-qze"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yR-gY-Nxx">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="173" id="Pp1-B8-31r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="Taco.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhD-Ur-Z8s">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="Cake.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="performSegue:" destination="2" eventType="touchUpInside" id="H6b-UR-mh6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Curated culinary coupons just for you!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CjD-HU-DUb">
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="13"/>
+                                <color key="textColor" red="0.48044105788657993" green="0.81156976585950868" blue="0.92418686224489799" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sc0-EU-60k">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="173" id="FZD-5M-Dyv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" backgroundImage="Ice_Cream.png">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="performSegue:" destination="2" eventType="touchUpInside" id="2ke-w5-RUJ"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="182-fp-nBD">
+                                <color key="backgroundColor" red="0.054901964962482452" green="0.40000003576278687" blue="0.61960786581039429" alpha="1" colorSpace="deviceRGB"/>
+                                <items>
+                                    <navigationItem title="DEAL-ICIOUS" id="gjD-7f-eND"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UbA-Vs-bf9">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="restartSession:" destination="2" eventType="touchUpInside" id="wZZ-c6-mRh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.058823533359999999" green="0.44705885649999999" blue="0.66274511810000003" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="Sc0-EU-60k" firstAttribute="leading" secondItem="6yR-gY-Nxx" secondAttribute="leading" type="default" id="0zv-PK-BDO"/>
+                            <constraint firstItem="6yR-gY-Nxx" firstAttribute="top" secondItem="Sc0-EU-60k" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="1g9-Du-2ix"/>
+                            <constraint firstItem="182-fp-nBD" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="2Y4-T4-0Ax"/>
+                            <constraint firstItem="Sc0-EU-60k" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="19" id="Hdd-Xo-RjV"/>
+                            <constraint firstItem="Sc0-EU-60k" firstAttribute="top" secondItem="CjD-HU-DUb" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Jq5-vN-XLI"/>
+                            <constraint firstItem="CjD-HU-DUb" firstAttribute="top" secondItem="3" secondAttribute="top" constant="64" id="O4L-CW-f2f"/>
+                            <constraint firstItem="Lol-gP-zke" firstAttribute="leading" secondItem="jhD-Ur-Z8s" secondAttribute="leading" type="default" id="TMV-mJ-KNg"/>
+                            <constraint firstItem="182-fp-nBD" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="YAt-Y1-lKy"/>
+                            <constraint firstItem="CjD-HU-DUb" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="YFe-Vv-sge"/>
+                            <constraint firstItem="jhD-Ur-Z8s" firstAttribute="top" secondItem="Lol-gP-zke" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="bru-1A-hpC"/>
+                            <constraint firstItem="jhD-Ur-Z8s" firstAttribute="top" secondItem="6yR-gY-Nxx" secondAttribute="top" type="default" id="cqp-c5-sMq"/>
+                            <constraint firstItem="CjD-HU-DUb" firstAttribute="centerX" secondItem="UbA-Vs-bf9" secondAttribute="centerX" type="default" id="ejh-5z-hKj"/>
+                            <constraint firstItem="Lol-gP-zke" firstAttribute="top" secondItem="CjD-HU-DUb" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="evc-RR-fIa"/>
+                            <constraint firstItem="6yR-gY-Nxx" firstAttribute="bottom" secondItem="jhD-Ur-Z8s" secondAttribute="bottom" type="default" id="id6-uv-UtH"/>
+                            <constraint firstAttribute="trailing" secondItem="Lol-gP-zke" secondAttribute="trailing" constant="19" id="kqH-yR-gbx"/>
+                            <constraint firstAttribute="bottom" secondItem="UbA-Vs-bf9" secondAttribute="bottom" constant="11" id="mZM-gk-y7D"/>
+                            <constraint firstItem="CjD-HU-DUb" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="rSe-z0-wkw"/>
+                            <constraint firstItem="182-fp-nBD" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="y4b-lD-tq4"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="NK7-r3-UOu"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="button1" destination="Lol-gP-zke" id="i6l-WA-plW"/>
+                        <outlet property="button2" destination="Sc0-EU-60k" id="mye-oc-cjp"/>
+                        <outlet property="button3" destination="6yR-gY-Nxx" id="n2A-Y9-WcL"/>
+                        <outlet property="button4" destination="jhD-Ur-Z8s" id="8LR-yg-X08"/>
+                        <outlet property="textLabel" destination="CjD-HU-DUb" id="gPs-oF-jRb"/>
+                        <outlet property="topBar" destination="182-fp-nBD" id="4WZ-tu-l0b"/>
+                        <segue destination="ql5-Li-daC" kind="modal" identifier="checkoutpage" modalTransitionStyle="flipHorizontal" id="cNv-CT-h4g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="281" y="122"/>
+        </scene>
+        <!--Touch Wrapper Final View Controller-->
+        <scene sceneID="IpK-Yc-54P">
+            <objects>
+                <viewController id="ql5-Li-daC" customClass="TouchWrapperFinalViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7wi-lO-b4L">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fig-fq-6gj">
+                                <color key="backgroundColor" red="0.058823533359999999" green="0.44705885649999999" blue="0.66274511810000003" alpha="1" colorSpace="deviceRGB"/>
+                                <items>
+                                    <navigationItem title="DEAL-ICIOUS" id="nMo-3t-v5U">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="IFM-0I-Bx9">
+                                            <connections>
+                                                <segue destination="2" kind="modal" modalTransitionStyle="flipHorizontal" id="eFn-su-83x"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="THANKS FOR YOUR PURCHASE! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="YcU-QE-10g">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="129" id="nov-Z2-6Op"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="18"/>
+                                <color key="textColor" red="0.48044105790000002" green="0.81156976589999996" blue="0.92418686220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Your coupon and receipt will be emailed to you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="217" translatesAutoresizingMaskIntoConstraints="NO" id="Ca5-H2-5Hm">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="KjZ-sM-Jy3"/>
+                                    <constraint firstAttribute="width" constant="217" id="XVd-Ig-gBp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="16"/>
+                                <color key="textColor" red="0.48044105790000002" green="0.81156976589999996" blue="0.92418686220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Happy eating!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isa-em-o4K">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="aVL-Pp-ahK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="16"/>
+                                <color key="textColor" red="0.48044105790000002" green="0.81156976589999996" blue="0.92418686220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.058823533359999999" green="0.44705885649999999" blue="0.66274511810000003" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="isa-em-o4K" firstAttribute="leading" secondItem="7wi-lO-b4L" secondAttribute="leading" type="default" id="8wY-pH-sWs"/>
+                            <constraint firstItem="isa-em-o4K" firstAttribute="trailing" secondItem="7wi-lO-b4L" secondAttribute="trailing" type="default" id="9De-DO-CGp"/>
+                            <constraint firstItem="Ca5-H2-5Hm" firstAttribute="top" secondItem="7wi-lO-b4L" secondAttribute="top" constant="193" id="Gv4-E6-4ob"/>
+                            <constraint firstItem="Ca5-H2-5Hm" firstAttribute="centerX" secondItem="YcU-QE-10g" secondAttribute="centerX" type="default" id="PwF-qA-23j"/>
+                            <constraint firstItem="YcU-QE-10g" firstAttribute="top" secondItem="Fig-fq-6gj" secondAttribute="bottom" type="default" id="We4-ex-UKd"/>
+                            <constraint firstItem="Fig-fq-6gj" firstAttribute="trailing" secondItem="7wi-lO-b4L" secondAttribute="trailing" type="default" id="eYw-4z-nXY"/>
+                            <constraint firstAttribute="bottom" secondItem="isa-em-o4K" secondAttribute="bottom" constant="146" id="mWn-sQ-dcz"/>
+                            <constraint firstItem="Fig-fq-6gj" firstAttribute="leading" secondItem="7wi-lO-b4L" secondAttribute="leading" type="default" id="n4g-Xv-ni5"/>
+                            <constraint firstAttribute="trailing" secondItem="YcU-QE-10g" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="wjU-ta-uo7"/>
+                            <constraint firstItem="YcU-QE-10g" firstAttribute="leading" secondItem="7wi-lO-b4L" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="zJa-NU-BD7"/>
+                            <constraint firstItem="Fig-fq-6gj" firstAttribute="top" secondItem="7wi-lO-b4L" secondAttribute="top" type="default" id="zfX-G9-KEX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1vy-Zw-UB4"/>
+                    <connections>
+                        <outlet property="topBar" destination="Fig-fq-6gj" id="SKy-hh-8CB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RDx-nU-KZY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="786" y="122"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Burrito.png" width="138" height="171"/>
+        <image name="Cake.png" width="138" height="171"/>
+        <image name="Ice_Cream.png" width="138" height="171"/>
+        <image name="Taco.png" width="138" height="171"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
