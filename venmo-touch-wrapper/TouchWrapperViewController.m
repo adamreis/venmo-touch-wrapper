@@ -151,12 +151,14 @@ didAuthorizeCardWithPaymentMethodCode:(NSString *)paymentMethodCode {
              
              //DISMISS CURRENT MODAL AND PRESENT NEW ONE. 
              // Now you can dismiss and tell the user everything worked.
-             [self dismissViewControllerAnimated:YES completion:^(void) {
-                 [[[UIAlertView alloc] initWithTitle:@"Success"
-                                             message:@"Saved your card!" delegate:nil
-                                   cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+             [self dismissViewControllerAnimated:NO completion:^{
+                 [self performSegueWithIdentifier:@"checkoutpage" sender:self];
+                 
+//                 [[[UIAlertView alloc] initWithTitle:@"Success"
+//                                             message:@"Saved your card!" delegate:nil
+//                                   cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
              }];
-             
+           
          } else {
              // Card did not save correctly, so show server error using `showErrorWithTitle`
              //             [paymentViewController
@@ -164,9 +166,7 @@ didAuthorizeCardWithPaymentMethodCode:(NSString *)paymentMethodCode {
              //              message:[self messageStringFromResponse:responseDictionary]];
          }
      }];
-    [self dismissViewControllerAnimated:NO completion:^{
-        [self performSegueWithIdentifier:@"checkoutpage" sender:self];
-    }];
+    
     
 }
 - (NSString *) messageStringFromResponse:(NSDictionary *)responseDictionary {

@@ -232,7 +232,7 @@
 		ED58491817B14B8400A9F4DC /* Ice_Cream@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ice_Cream@2x.png"; sourceTree = "<group>"; };
 		ED58491917B14B8400A9F4DC /* Taco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Taco.png; sourceTree = "<group>"; };
 		ED58491A17B14B8400A9F4DC /* Taco@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Taco@2x.png"; sourceTree = "<group>"; };
-		ED64494617B040D600DAC1C9 /* venmo-touch-wrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "venmo-touch-wrapper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED64494617B040D600DAC1C9 /* venmo-touch-wrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "venmo-touch-wrapper.app"; path = Dealicious.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED64494917B040D600DAC1C9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ED64494B17B040D600DAC1C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ED64494D17B040D600DAC1C9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
