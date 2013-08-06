@@ -9,13 +9,17 @@
 #import "TouchWrapperViewController.h"
 #import "TouchWrapperBraintreeViewController.h"
 #import "TouchWrapperFinalViewController.h"
-@interface TouchWrapperViewController () 
+//#import <VenmoTouch/VenmoTouch.h>
+@interface TouchWrapperViewController ()
 @end
 
 @implementation TouchWrapperViewController
 
 
 
+-(void)viewWillAppear:(BOOL)animated {
+    [[VTClient sharedClient] refresh];
+}
 
 - (void)viewDidLoad
 {
@@ -46,7 +50,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+-(IBAction)restartSession:(id)sender {
+    [[VTClient sharedClient] restartSession];
+}
 
 - (IBAction)performSegue:(id)sender {
     [self loadBraintreeView];
@@ -68,7 +74,7 @@
                                                               action:@selector(dismissModalViewControllerAnimated:)];
     
     UIImage *headerImage = [UIImage imageNamed: @"Header"];
-    paymentViewController.navigationController.navigationBar.topItem.title = @"DEAL-ICIOUS - $5";
+    paymentViewController.navigationController.navigationBar.topItem.title = @"Checkout - $5";
     [paymentViewController.navigationController.navigationBar setBackgroundImage:headerImage forBarMetrics:UIBarMetricsDefault];
     
     // Now, display the navigation controller that contains the payment form, eg modally:
@@ -109,7 +115,7 @@ didAuthorizeCardWithPaymentMethodCode:(NSString *)paymentMethodCode {
         didSubmitCardWithInfo:(NSDictionary *)cardInfo
          andCardInfoEncrypted:(NSDictionary *)cardInfoEncrypted {
     NSLog(@"didSubmitCardWithInfo %@ andCardInfoEncrypted %@", cardInfo, cardInfoEncrypted);
-    
+
     [self savePaymentInfoToServer:cardInfoEncrypted];
 }
 
@@ -143,6 +149,7 @@ didAuthorizeCardWithPaymentMethodCode:(NSString *)paymentMethodCode {
              // `prepareForDismissal`, on your `BTPaymentViewController
 //             [paymentViewController   prepareForDismissal];
              
+             //DISMISS CURRENT MODAL AND PRESENT NEW ONE. 
              // Now you can dismiss and tell the user everything worked.
              [self dismissViewControllerAnimated:YES completion:^(void) {
                  [[[UIAlertView alloc] initWithTitle:@"Success"
@@ -157,6 +164,10 @@ didAuthorizeCardWithPaymentMethodCode:(NSString *)paymentMethodCode {
              //              message:[self messageStringFromResponse:responseDictionary]];
          }
      }];
+    [self dismissViewControllerAnimated:NO completion:^{
+        [self performSegueWithIdentifier:@"checkoutpage" sender:self];
+    }];
+    
 }
 - (NSString *) messageStringFromResponse:(NSDictionary *)responseDictionary {
     return [responseDictionary valueForKey:@"message"];

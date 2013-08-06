@@ -20,6 +20,7 @@
 
 
 
+- (IBAction)restartSession:(id)sender;
 - (IBAction)performSegue:(id)sender;
 
 

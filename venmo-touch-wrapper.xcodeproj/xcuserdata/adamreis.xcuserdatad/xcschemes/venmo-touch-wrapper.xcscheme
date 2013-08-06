@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "ED64494517B040D600DAC1C9"
                BuildableName = "venmo-touch-wrapper.app"
-               BlueprintName = "venmo-touch-wrapper"
+               BlueprintName = "Dealicious"
                ReferencedContainer = "container:venmo-touch-wrapper.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,7 +44,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ED64494517B040D600DAC1C9"
             BuildableName = "venmo-touch-wrapper.app"
-            BlueprintName = "venmo-touch-wrapper"
+            BlueprintName = "Dealicious"
             ReferencedContainer = "container:venmo-touch-wrapper.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,7 +63,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ED64494517B040D600DAC1C9"
             BuildableName = "venmo-touch-wrapper.app"
-            BlueprintName = "venmo-touch-wrapper"
+            BlueprintName = "Dealicious"
             ReferencedContainer = "container:venmo-touch-wrapper.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -81,7 +81,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ED64494517B040D600DAC1C9"
             BuildableName = "venmo-touch-wrapper.app"
-            BlueprintName = "venmo-touch-wrapper"
+            BlueprintName = "Dealicious"
             ReferencedContainer = "container:venmo-touch-wrapper.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

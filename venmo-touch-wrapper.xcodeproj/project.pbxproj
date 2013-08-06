@@ -53,6 +53,10 @@
 		ED64497817B040D600DAC1C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED64497617B040D600DAC1C9 /* InfoPlist.strings */; };
 		ED64497B17B040D600DAC1C9 /* venmo_touch_wrapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED64497A17B040D600DAC1C9 /* venmo_touch_wrapperTests.m */; };
 		EDFBA9EB17B1650700E33651 /* TouchWrapperFinalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFBA9EA17B1650700E33651 /* TouchWrapperFinalViewController.m */; };
+		EDFBA9F117B1A67C00E33651 /* app_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EDFBA9EF17B1A67C00E33651 /* app_icon.png */; };
+		EDFBA9F217B1A67C00E33651 /* app_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDFBA9F017B1A67C00E33651 /* app_icon@2x.png */; };
+		EDFBA9FB17B1A69D00E33651 /* app_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EDFBA9FA17B1A69D00E33651 /* app_icon.png */; };
+		EDFBA9FD17B1A6A100E33651 /* app_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDFBA9FC17B1A6A100E33651 /* app_icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -252,6 +256,10 @@
 		ED64497A17B040D600DAC1C9 /* venmo_touch_wrapperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = venmo_touch_wrapperTests.m; sourceTree = "<group>"; };
 		EDFBA9E917B1650700E33651 /* TouchWrapperFinalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchWrapperFinalViewController.h; sourceTree = "<group>"; };
 		EDFBA9EA17B1650700E33651 /* TouchWrapperFinalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchWrapperFinalViewController.m; sourceTree = "<group>"; };
+		EDFBA9EF17B1A67C00E33651 /* app_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon.png; sourceTree = "<group>"; };
+		EDFBA9F017B1A67C00E33651 /* app_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app_icon@2x.png"; sourceTree = "<group>"; };
+		EDFBA9FA17B1A69D00E33651 /* app_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon.png; sourceTree = "<group>"; };
+		EDFBA9FC17B1A6A100E33651 /* app_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app_icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -476,6 +484,8 @@
 		ED58491017B14B4700A9F4DC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EDFBA9EF17B1A67C00E33651 /* app_icon.png */,
+				EDFBA9F017B1A67C00E33651 /* app_icon@2x.png */,
 				ED58491117B14B8400A9F4DC /* Burrito.png */,
 				ED58491217B14B8400A9F4DC /* Burrito@2x.png */,
 				ED58491317B14B8400A9F4DC /* Cake.png */,
@@ -493,6 +503,8 @@
 		ED64493D17B040D600DAC1C9 = {
 			isa = PBXGroup;
 			children = (
+				EDFBA9FC17B1A6A100E33651 /* app_icon@2x.png */,
+				EDFBA9FA17B1A69D00E33651 /* app_icon.png */,
 				970E33D017B183E700D5C354 /* Security.framework */,
 				970E33CE17B183E300D5C354 /* QuartzCore.framework */,
 				ED64494F17B040D600DAC1C9 /* venmo-touch-wrapper */,
@@ -577,9 +589,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ED64494517B040D600DAC1C9 /* venmo-touch-wrapper */ = {
+		ED64494517B040D600DAC1C9 /* Dealicious */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED64497E17B040D600DAC1C9 /* Build configuration list for PBXNativeTarget "venmo-touch-wrapper" */;
+			buildConfigurationList = ED64497E17B040D600DAC1C9 /* Build configuration list for PBXNativeTarget "Dealicious" */;
 			buildPhases = (
 				ED64494217B040D600DAC1C9 /* Sources */,
 				ED64494317B040D600DAC1C9 /* Frameworks */,
@@ -589,7 +601,7 @@
 			);
 			dependencies = (
 			);
-			name = "venmo-touch-wrapper";
+			name = Dealicious;
 			productName = "venmo-touch-wrapper";
 			productReference = ED64494617B040D600DAC1C9 /* venmo-touch-wrapper.app */;
 			productType = "com.apple.product-type.application";
@@ -641,7 +653,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				ED64494517B040D600DAC1C9 /* venmo-touch-wrapper */,
+				ED64494517B040D600DAC1C9 /* Dealicious */,
 				ED64496B17B040D600DAC1C9 /* venmo-touch-wrapperTests */,
 			);
 		};
@@ -721,6 +733,10 @@
 				ED58492217B14B8400A9F4DC /* Ice_Cream@2x.png in Resources */,
 				ED58492317B14B8400A9F4DC /* Taco.png in Resources */,
 				ED58492417B14B8400A9F4DC /* Taco@2x.png in Resources */,
+				EDFBA9F117B1A67C00E33651 /* app_icon.png in Resources */,
+				EDFBA9F217B1A67C00E33651 /* app_icon@2x.png in Resources */,
+				EDFBA9FB17B1A69D00E33651 /* app_icon.png in Resources */,
+				EDFBA9FD17B1A6A100E33651 /* app_icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -789,7 +805,7 @@
 /* Begin PBXTargetDependency section */
 		ED64497217B040D600DAC1C9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = ED64494517B040D600DAC1C9 /* venmo-touch-wrapper */;
+			target = ED64494517B040D600DAC1C9 /* Dealicious */;
 			targetProxy = ED64497117B040D600DAC1C9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1002,7 +1018,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED64497E17B040D600DAC1C9 /* Build configuration list for PBXNativeTarget "venmo-touch-wrapper" */ = {
+		ED64497E17B040D600DAC1C9 /* Build configuration list for PBXNativeTarget "Dealicious" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED64497F17B040D600DAC1C9 /* Debug */,
