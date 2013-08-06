@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED58490F17B04CB700A9F4DC /* TouchWrapperBraintreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED58490E17B04CB700A9F4DC /* TouchWrapperBraintreeViewController.m */; };
+		ED58491B17B14B8400A9F4DC /* Burrito.png in Resources */ = {isa = PBXBuildFile; fileRef = ED58491117B14B8400A9F4DC /* Burrito.png */; };
+		ED58491C17B14B8400A9F4DC /* Burrito@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED58491217B14B8400A9F4DC /* Burrito@2x.png */; };
+		ED58491D17B14B8400A9F4DC /* Cake.png in Resources */ = {isa = PBXBuildFile; fileRef = ED58491317B14B8400A9F4DC /* Cake.png */; };
+		ED58491E17B14B8400A9F4DC /* Cake@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED58491417B14B8400A9F4DC /* Cake@2x.png */; };
+		ED58491F17B14B8400A9F4DC /* Header.png in Resources */ = {isa = PBXBuildFile; fileRef = ED58491517B14B8400A9F4DC /* Header.png */; };
+		ED58492017B14B8400A9F4DC /* Header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED58491617B14B8400A9F4DC /* Header@2x.png */; };
+		ED58492117B14B8400A9F4DC /* Ice_Cream.png in Resources */ = {isa = PBXBuildFile; fileRef = ED58491717B14B8400A9F4DC /* Ice_Cream.png */; };
+		ED58492217B14B8400A9F4DC /* Ice_Cream@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED58491817B14B8400A9F4DC /* Ice_Cream@2x.png */; };
+		ED58492317B14B8400A9F4DC /* Taco.png in Resources */ = {isa = PBXBuildFile; fileRef = ED58491917B14B8400A9F4DC /* Taco.png */; };
+		ED58492417B14B8400A9F4DC /* Taco@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED58491A17B14B8400A9F4DC /* Taco@2x.png */; };
 		ED64494A17B040D600DAC1C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED64494917B040D600DAC1C9 /* UIKit.framework */; };
 		ED64494C17B040D600DAC1C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED64494B17B040D600DAC1C9 /* Foundation.framework */; };
 		ED64494E17B040D600DAC1C9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED64494D17B040D600DAC1C9 /* CoreGraphics.framework */; };
@@ -23,6 +34,7 @@
 		ED64497017B040D600DAC1C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED64494B17B040D600DAC1C9 /* Foundation.framework */; };
 		ED64497817B040D600DAC1C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED64497617B040D600DAC1C9 /* InfoPlist.strings */; };
 		ED64497B17B040D600DAC1C9 /* venmo_touch_wrapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED64497A17B040D600DAC1C9 /* venmo_touch_wrapperTests.m */; };
+		EDFBA9EB17B1650700E33651 /* TouchWrapperFinalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFBA9EA17B1650700E33651 /* TouchWrapperFinalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +48,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED58490D17B04CB700A9F4DC /* TouchWrapperBraintreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchWrapperBraintreeViewController.h; sourceTree = "<group>"; };
+		ED58490E17B04CB700A9F4DC /* TouchWrapperBraintreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchWrapperBraintreeViewController.m; sourceTree = "<group>"; };
+		ED58491117B14B8400A9F4DC /* Burrito.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Burrito.png; sourceTree = "<group>"; };
+		ED58491217B14B8400A9F4DC /* Burrito@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Burrito@2x.png"; sourceTree = "<group>"; };
+		ED58491317B14B8400A9F4DC /* Cake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cake.png; sourceTree = "<group>"; };
+		ED58491417B14B8400A9F4DC /* Cake@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cake@2x.png"; sourceTree = "<group>"; };
+		ED58491517B14B8400A9F4DC /* Header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Header.png; sourceTree = "<group>"; };
+		ED58491617B14B8400A9F4DC /* Header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Header@2x.png"; sourceTree = "<group>"; };
+		ED58491717B14B8400A9F4DC /* Ice_Cream.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ice_Cream.png; sourceTree = "<group>"; };
+		ED58491817B14B8400A9F4DC /* Ice_Cream@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ice_Cream@2x.png"; sourceTree = "<group>"; };
+		ED58491917B14B8400A9F4DC /* Taco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Taco.png; sourceTree = "<group>"; };
+		ED58491A17B14B8400A9F4DC /* Taco@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Taco@2x.png"; sourceTree = "<group>"; };
 		ED64494617B040D600DAC1C9 /* venmo-touch-wrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "venmo-touch-wrapper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED64494917B040D600DAC1C9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ED64494B17B040D600DAC1C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,6 +82,8 @@
 		ED64497717B040D600DAC1C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ED64497917B040D600DAC1C9 /* venmo_touch_wrapperTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = venmo_touch_wrapperTests.h; sourceTree = "<group>"; };
 		ED64497A17B040D600DAC1C9 /* venmo_touch_wrapperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = venmo_touch_wrapperTests.m; sourceTree = "<group>"; };
+		EDFBA9E917B1650700E33651 /* TouchWrapperFinalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchWrapperFinalViewController.h; sourceTree = "<group>"; };
+		EDFBA9EA17B1650700E33651 /* TouchWrapperFinalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchWrapperFinalViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +110,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED58491017B14B4700A9F4DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ED58491117B14B8400A9F4DC /* Burrito.png */,
+				ED58491217B14B8400A9F4DC /* Burrito@2x.png */,
+				ED58491317B14B8400A9F4DC /* Cake.png */,
+				ED58491417B14B8400A9F4DC /* Cake@2x.png */,
+				ED58491517B14B8400A9F4DC /* Header.png */,
+				ED58491617B14B8400A9F4DC /* Header@2x.png */,
+				ED58491717B14B8400A9F4DC /* Ice_Cream.png */,
+				ED58491817B14B8400A9F4DC /* Ice_Cream@2x.png */,
+				ED58491917B14B8400A9F4DC /* Taco.png */,
+				ED58491A17B14B8400A9F4DC /* Taco@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		ED64493D17B040D600DAC1C9 = {
 			isa = PBXGroup;
 			children = (
@@ -117,12 +160,17 @@
 		ED64494F17B040D600DAC1C9 /* venmo-touch-wrapper */ = {
 			isa = PBXGroup;
 			children = (
+				ED58491017B14B4700A9F4DC /* Resources */,
 				ED64495817B040D600DAC1C9 /* TouchWrapperAppDelegate.h */,
 				ED64495917B040D600DAC1C9 /* TouchWrapperAppDelegate.m */,
 				ED64496117B040D600DAC1C9 /* MainStoryboard.storyboard */,
 				ED64496417B040D600DAC1C9 /* TouchWrapperViewController.h */,
 				ED64496517B040D600DAC1C9 /* TouchWrapperViewController.m */,
 				ED64495017B040D600DAC1C9 /* Supporting Files */,
+				ED58490D17B04CB700A9F4DC /* TouchWrapperBraintreeViewController.h */,
+				ED58490E17B04CB700A9F4DC /* TouchWrapperBraintreeViewController.m */,
+				EDFBA9E917B1650700E33651 /* TouchWrapperFinalViewController.h */,
+				EDFBA9EA17B1650700E33651 /* TouchWrapperFinalViewController.m */,
 			);
 			path = "venmo-touch-wrapper";
 			sourceTree = "<group>";
@@ -237,6 +285,16 @@
 				ED64495E17B040D600DAC1C9 /* Default@2x.png in Resources */,
 				ED64496017B040D600DAC1C9 /* Default-568h@2x.png in Resources */,
 				ED64496317B040D600DAC1C9 /* MainStoryboard.storyboard in Resources */,
+				ED58491B17B14B8400A9F4DC /* Burrito.png in Resources */,
+				ED58491C17B14B8400A9F4DC /* Burrito@2x.png in Resources */,
+				ED58491D17B14B8400A9F4DC /* Cake.png in Resources */,
+				ED58491E17B14B8400A9F4DC /* Cake@2x.png in Resources */,
+				ED58491F17B14B8400A9F4DC /* Header.png in Resources */,
+				ED58492017B14B8400A9F4DC /* Header@2x.png in Resources */,
+				ED58492117B14B8400A9F4DC /* Ice_Cream.png in Resources */,
+				ED58492217B14B8400A9F4DC /* Ice_Cream@2x.png in Resources */,
+				ED58492317B14B8400A9F4DC /* Taco.png in Resources */,
+				ED58492417B14B8400A9F4DC /* Taco@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +332,8 @@
 				ED64495617B040D600DAC1C9 /* main.m in Sources */,
 				ED64495A17B040D600DAC1C9 /* TouchWrapperAppDelegate.m in Sources */,
 				ED64496617B040D600DAC1C9 /* TouchWrapperViewController.m in Sources */,
+				ED58490F17B04CB700A9F4DC /* TouchWrapperBraintreeViewController.m in Sources */,
+				EDFBA9EB17B1650700E33651 /* TouchWrapperFinalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +514,7 @@
 				ED64498017B040D600DAC1C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED64498117B040D600DAC1C9 /* Build configuration list for PBXNativeTarget "venmo-touch-wrapperTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +523,7 @@
 				ED64498317B040D600DAC1C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

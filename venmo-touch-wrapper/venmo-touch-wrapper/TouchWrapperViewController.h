@@ -15,12 +15,11 @@
 @property (strong, nonatomic) IBOutlet UIButton *button4;
 @property (strong, nonatomic) IBOutlet UILabel *textLabel;
 
+@property (strong, nonatomic) IBOutlet UINavigationBar *topBar;
 
 
-- (IBAction)button1Touch:(id)sender;
-- (IBAction)button2Touch:(id)sender;
-- (IBAction)button3Touch:(id)sender;
-- (IBAction)button4Touch:(id)sender;
+
+- (IBAction)performSegue:(id)sender;
 
 
 @end
