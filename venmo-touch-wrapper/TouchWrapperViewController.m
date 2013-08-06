@@ -81,8 +81,10 @@
 didAuthorizeCardWithPaymentMethodCode:(NSString *)paymentMethodCode {
     NSLog(@"didAuthorizeCardWithPaymentMethodCode %@", paymentMethodCode);
     
-//    [self performSegueWithIdentifier:checkoutpage sender:nil];
-    
+//    [self dismissViewControllerAnimated:<#(BOOL)#> completion:<#^(void)completion#>]
+    [self dismissViewControllerAnimated:NO completion:^{
+        [self performSegueWithIdentifier:@"checkoutpage" sender:self];
+    }];
     ///THIS FUNCTION WILL BE CALLED. 
 //    [self performSegueWithIdentifier:@"checkoutpage" sender:self];
 //    TouchWrapperFinalViewController *finalView = [[TouchWrapperFinalViewController alloc] init];

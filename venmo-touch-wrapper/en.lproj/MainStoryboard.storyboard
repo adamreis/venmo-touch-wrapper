@@ -109,7 +109,7 @@
                         <outlet property="button4" destination="jhD-Ur-Z8s" id="8LR-yg-X08"/>
                         <outlet property="textLabel" destination="CjD-HU-DUb" id="gPs-oF-jRb"/>
                         <outlet property="topBar" destination="182-fp-nBD" id="4WZ-tu-l0b"/>
-                        <segue destination="ql5-Li-daC" kind="modal" identifier="checkoutpage" id="cNv-CT-h4g"/>
+                        <segue destination="ql5-Li-daC" kind="modal" identifier="checkoutpage" modalTransitionStyle="flipHorizontal" id="cNv-CT-h4g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -128,7 +128,11 @@
                                 <color key="backgroundColor" red="0.058823533359999999" green="0.44705885649999999" blue="0.66274511810000003" alpha="1" colorSpace="deviceRGB"/>
                                 <items>
                                     <navigationItem title="DEAL-ICIOUS" id="nMo-3t-v5U">
-                                        <barButtonItem key="leftBarButtonItem" title="back" id="IFM-0I-Bx9"/>
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="IFM-0I-Bx9">
+                                            <connections>
+                                                <segue destination="2" kind="modal" modalTransitionStyle="flipHorizontal" id="eFn-su-83x"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
