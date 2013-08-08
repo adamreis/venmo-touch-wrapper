@@ -4,7 +4,7 @@
    version = "1.0">
    <FileBreakpoints>
       <FileBreakpoint
-         shouldBeEnabled = "Yes"
+         shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "venmo-touch-wrapper/TouchWrapperBraintreeViewController.m"
@@ -21,11 +21,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "venmo-touch-wrapper/TouchWrapperViewController.m"
-         timestampString = "397515053.187245"
+         timestampString = "397667804.775102"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "158"
-         endingLineNumber = "158"
+         startingLineNumber = "160"
+         endingLineNumber = "160"
          landmarkName = "-savePaymentInfoToServer:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -34,12 +34,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "venmo-touch-wrapper/TouchWrapperViewController.m"
-         timestampString = "397515053.187245"
+         timestampString = "397667584.482824"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "120"
-         endingLineNumber = "120"
-         landmarkName = "-paymentViewController:didAuthorizeCardWithPaymentMethodCode:"
+         startingLineNumber = "121"
+         endingLineNumber = "121"
+         landmarkName = "-paymentViewController:didSubmitCardWithInfo:andCardInfoEncrypted:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

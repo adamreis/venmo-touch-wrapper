@@ -87,27 +87,11 @@
 didAuthorizeCardWithPaymentMethodCode:(NSString *)paymentMethodCode {
     NSLog(@"didAuthorizeCardWithPaymentMethodCode %@", paymentMethodCode);
     
-//    [self dismissViewControllerAnimated:<#(BOOL)#> completion:<#^(void)completion#>]
+    [paymentViewController prepareForDismissal];
     [self dismissViewControllerAnimated:NO completion:^{
         [self performSegueWithIdentifier:@"checkoutpage" sender:self];
     }];
-    ///THIS FUNCTION WILL BE CALLED. 
-//    [self performSegueWithIdentifier:@"checkoutpage" sender:self];
-//    TouchWrapperFinalViewController *finalView = [[TouchWrapperFinalViewController alloc] init];
-//
-//    UINavigationController *navController =
-//    [[UINavigationController alloc] initWithRootViewController:finalView];
-//    [self presentViewController:navController animated:YES completion:nil];
-
-    //Send payment info to server. Not needed at this point.
-    // Create a dictionary of POST data of the format
-    // {"payment_method_code": "[encrypted payment_method_code data from Venmo Touch client]"}
     
-    
-    //    NSMutableDictionary *paymentInfo = [NSMutableDictionary dictionaryWithObject:paymentMethodCode
-    //                                                                          forKey:@"venmo_sdk_payment_method_code"];
-
-    //    [self savePaymentInfoToServer:paymentInfo]; // send card through your server to Braintree Gateway
 }
 
 
@@ -116,11 +100,11 @@ didAuthorizeCardWithPaymentMethodCode:(NSString *)paymentMethodCode {
          andCardInfoEncrypted:(NSDictionary *)cardInfoEncrypted {
     NSLog(@"didSubmitCardWithInfo %@ andCardInfoEncrypted %@", cardInfo, cardInfoEncrypted);
 
-    [self savePaymentInfoToServer:cardInfoEncrypted];
+    [self savePaymentInfoToServer:cardInfoEncrypted withPaymentViewController:paymentViewController];
 }
 
 
-- (void) savePaymentInfoToServer:(NSDictionary *)paymentInfo {
+- (void) savePaymentInfoToServer:(NSDictionary *)paymentInfo withPaymentViewController: (BTPaymentViewController *)paymentViewController {
     NSURL *url = [NSURL URLWithString: @"http://venmo-sdk-sample-one.herokuapp.com/card/add"];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
     
@@ -147,10 +131,11 @@ didAuthorizeCardWithPaymentMethodCode:(NSString *)paymentMethodCode {
          if ([[responseDictionary valueForKey:@"success"] isEqualToNumber:@1]) { // Success!
              // Don't forget to call the cleanup method,
              // `prepareForDismissal`, on your `BTPaymentViewController
-//             [paymentViewController   prepareForDismissal];
-             
+
              //DISMISS CURRENT MODAL AND PRESENT NEW ONE. 
              // Now you can dismiss and tell the user everything worked.
+             [paymentViewController prepareForDismissal];
+
              [self dismissViewControllerAnimated:NO completion:^{
                  [self performSegueWithIdentifier:@"checkoutpage" sender:self];
                  
